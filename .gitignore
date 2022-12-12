@@ -1,35 +1,110 @@
-.nuget/
-.vscode/
-.vs/
-.DS_Store
-.python-version
+bazel*
+venv
+.*
+Packages*
+build*
 
+# =============== #
+# Unity generated #
+# =============== #
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
-/[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
-/[Uu]ser[Ss]ettings/
-/[Cc]ode[Cc]overage/
-*.csproj
-*.sln
+/[Uu]serSettings/
+
+## Gradle (Used for Android builds)
+.gradle
+
+## "QuickSearch" package
+Assets/Assets.index
+Assets/Assets.index.meta
+UserSettings/QuickSearch.settings
+
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+/*.csproj
+/*.unityproj
+/*.booproj
+/*.sln
+/*.suo
+/*.user
+/*.userprefs
+/*.pidb
+/*.svd
+UnityVS/
+UnityVS.*
+build_info.txt
+**/[Bb]in
+**/[Oo]bj
+*.vs
+*.sublime-project
+*.sublime-workspace
+
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+
+# ================ #
+# Other #
+# ================ #
+
+# blender backup file
+*.blend1
+*.blend1.meta
+Icons.meta
+BuildReports/
+BuildInfo.txt
+BuildInfo.txt.meta
+/**/Online maps/Icons/
+
+# Builds
+#*.apk
 *.unitypackage
+/Assets/StreamingAssets/NoesisGUI/*
+/Assets/StreamingAssets/NoesisGUI.meta
+/Assets/Editor/NoesisGUI/assets*
+/Assets/Editor/NoesisGUI/Platform_*
 
-*.aar
-*.bc
-*.dll
-*.dylib
-*.so
-**/*.framework/*
-!**/*.framework/*.meta
+# Addressables
+ServerData
+/Assets/AddressableAssetsData/Android
+/Assets/AddressableAssetsData/iOS
+/Assets/AddressableAssetsData/link.xml
+/Assets/AddressableAssetsData/link.xml.meta
 
-bazel-*
+# Visual Studio Code
+.vscode/
+**/VSCode/
+VSCode.meta
+**/VSStudioCode/
+VSStudioCode.meta
 
-Assets/StreamingAssets*
+# Jetbrains Rider
+.idea/
+Assets/Plugins/Editor/JetBrains*
 
-Packages/com.github.homuler.mediapipe/Runtime/Resources/*
-!Packages/com.github.homuler.mediapipe/Runtime/Resources/*.meta
-Packages/com.github.homuler.mediapipe/Runtime/Resources/object_detection_3d.bytes.meta
-Packages/com.github.homuler.mediapipe/Runtime/Plugins/Protobuf/*.dll
-Packages/com.github.homuler.mediapipe/Runtime/Scripts/Protobuf/**/*.cs
+
+# Word temp
+~$*.doc*
+~$*.docx*
+~*.tmp*
+
+# Excel
+~$*.xls*
+~$*.xlsx*
+
+# crash log
+*.json
